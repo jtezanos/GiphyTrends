@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E919883C1D4A67D900123A75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E919883B1D4A67D900123A75 /* AppDelegate.swift */; };
+		E919883E1D4A67D900123A75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E919883D1D4A67D900123A75 /* ViewController.swift */; };
+		E91988411D4A67D900123A75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E919883F1D4A67D900123A75 /* Main.storyboard */; };
+		E91988441D4A67D900123A75 /* GiphyTrends.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E91988421D4A67D900123A75 /* GiphyTrends.xcdatamodeld */; };
+		E91988461D4A67D900123A75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E91988451D4A67D900123A75 /* Assets.xcassets */; };
+		E91988491D4A67D900123A75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E91988471D4A67D900123A75 /* LaunchScreen.storyboard */; };
+		E91988541D4A67D900123A75 /* GiphyTrendsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91988531D4A67D900123A75 /* GiphyTrendsTests.swift */; };
+		E919885F1D4A67D900123A75 /* GiphyTrendsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E919885E1D4A67D900123A75 /* GiphyTrendsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E91988501D4A67D900123A75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E91988301D4A67D900123A75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E91988371D4A67D900123A75;
+			remoteInfo = GiphyTrends;
+		};
+		E919885B1D4A67D900123A75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E91988301D4A67D900123A75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E91988371D4A67D900123A75;
+			remoteInfo = GiphyTrends;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E91988381D4A67D900123A75 /* GiphyTrends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiphyTrends.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E919883B1D4A67D900123A75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E919883D1D4A67D900123A75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E91988401D4A67D900123A75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E91988431D4A67D900123A75 /* GiphyTrends.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GiphyTrends.xcdatamodel; sourceTree = "<group>"; };
+		E91988451D4A67D900123A75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E91988481D4A67D900123A75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E919884A1D4A67D900123A75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E919884F1D4A67D900123A75 /* GiphyTrendsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GiphyTrendsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E91988531D4A67D900123A75 /* GiphyTrendsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyTrendsTests.swift; sourceTree = "<group>"; };
+		E91988551D4A67D900123A75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E919885A1D4A67D900123A75 /* GiphyTrendsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GiphyTrendsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E919885E1D4A67D900123A75 /* GiphyTrendsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyTrendsUITests.swift; sourceTree = "<group>"; };
+		E91988601D4A67D900123A75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E91988351D4A67D900123A75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E919884C1D4A67D900123A75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E91988571D4A67D900123A75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E919882F1D4A67D900123A75 = {
+			isa = PBXGroup;
+			children = (
+				E919883A1D4A67D900123A75 /* GiphyTrends */,
+				E91988521D4A67D900123A75 /* GiphyTrendsTests */,
+				E919885D1D4A67D900123A75 /* GiphyTrendsUITests */,
+				E91988391D4A67D900123A75 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E91988391D4A67D900123A75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E91988381D4A67D900123A75 /* GiphyTrends.app */,
+				E919884F1D4A67D900123A75 /* GiphyTrendsTests.xctest */,
+				E919885A1D4A67D900123A75 /* GiphyTrendsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E919883A1D4A67D900123A75 /* GiphyTrends */ = {
+			isa = PBXGroup;
+			children = (
+				E919883B1D4A67D900123A75 /* AppDelegate.swift */,
+				E919883D1D4A67D900123A75 /* ViewController.swift */,
+				E919883F1D4A67D900123A75 /* Main.storyboard */,
+				E91988451D4A67D900123A75 /* Assets.xcassets */,
+				E91988471D4A67D900123A75 /* LaunchScreen.storyboard */,
+				E919884A1D4A67D900123A75 /* Info.plist */,
+				E91988421D4A67D900123A75 /* GiphyTrends.xcdatamodeld */,
+			);
+			path = GiphyTrends;
+			sourceTree = "<group>";
+		};
+		E91988521D4A67D900123A75 /* GiphyTrendsTests */ = {
+			isa = PBXGroup;
+			children = (
+				E91988531D4A67D900123A75 /* GiphyTrendsTests.swift */,
+				E91988551D4A67D900123A75 /* Info.plist */,
+			);
+			path = GiphyTrendsTests;
+			sourceTree = "<group>";
+		};
+		E919885D1D4A67D900123A75 /* GiphyTrendsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E919885E1D4A67D900123A75 /* GiphyTrendsUITests.swift */,
+				E91988601D4A67D900123A75 /* Info.plist */,
+			);
+			path = GiphyTrendsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E91988371D4A67D900123A75 /* GiphyTrends */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E91988631D4A67D900123A75 /* Build configuration list for PBXNativeTarget "GiphyTrends" */;
+			buildPhases = (
+				E91988341D4A67D900123A75 /* Sources */,
+				E91988351D4A67D900123A75 /* Frameworks */,
+				E91988361D4A67D900123A75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GiphyTrends;
+			productName = GiphyTrends;
+			productReference = E91988381D4A67D900123A75 /* GiphyTrends.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E919884E1D4A67D900123A75 /* GiphyTrendsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E91988661D4A67D900123A75 /* Build configuration list for PBXNativeTarget "GiphyTrendsTests" */;
+			buildPhases = (
+				E919884B1D4A67D900123A75 /* Sources */,
+				E919884C1D4A67D900123A75 /* Frameworks */,
+				E919884D1D4A67D900123A75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E91988511D4A67D900123A75 /* PBXTargetDependency */,
+			);
+			name = GiphyTrendsTests;
+			productName = GiphyTrendsTests;
+			productReference = E919884F1D4A67D900123A75 /* GiphyTrendsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E91988591D4A67D900123A75 /* GiphyTrendsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E91988691D4A67D900123A75 /* Build configuration list for PBXNativeTarget "GiphyTrendsUITests" */;
+			buildPhases = (
+				E91988561D4A67D900123A75 /* Sources */,
+				E91988571D4A67D900123A75 /* Frameworks */,
+				E91988581D4A67D900123A75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E919885C1D4A67D900123A75 /* PBXTargetDependency */,
+			);
+			name = GiphyTrendsUITests;
+			productName = GiphyTrendsUITests;
+			productReference = E919885A1D4A67D900123A75 /* GiphyTrendsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E91988301D4A67D900123A75 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = NA;
+				TargetAttributes = {
+					E91988371D4A67D900123A75 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					E919884E1D4A67D900123A75 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = E91988371D4A67D900123A75;
+					};
+					E91988591D4A67D900123A75 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = E91988371D4A67D900123A75;
+					};
+				};
+			};
+			buildConfigurationList = E91988331D4A67D900123A75 /* Build configuration list for PBXProject "GiphyTrends" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E919882F1D4A67D900123A75;
+			productRefGroup = E91988391D4A67D900123A75 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E91988371D4A67D900123A75 /* GiphyTrends */,
+				E919884E1D4A67D900123A75 /* GiphyTrendsTests */,
+				E91988591D4A67D900123A75 /* GiphyTrendsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E91988361D4A67D900123A75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E91988491D4A67D900123A75 /* LaunchScreen.storyboard in Resources */,
+				E91988461D4A67D900123A75 /* Assets.xcassets in Resources */,
+				E91988411D4A67D900123A75 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E919884D1D4A67D900123A75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E91988581D4A67D900123A75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E91988341D4A67D900123A75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E91988441D4A67D900123A75 /* GiphyTrends.xcdatamodeld in Sources */,
+				E919883E1D4A67D900123A75 /* ViewController.swift in Sources */,
+				E919883C1D4A67D900123A75 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E919884B1D4A67D900123A75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E91988541D4A67D900123A75 /* GiphyTrendsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E91988561D4A67D900123A75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E919885F1D4A67D900123A75 /* GiphyTrendsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E91988511D4A67D900123A75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E91988371D4A67D900123A75 /* GiphyTrends */;
+			targetProxy = E91988501D4A67D900123A75 /* PBXContainerItemProxy */;
+		};
+		E919885C1D4A67D900123A75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E91988371D4A67D900123A75 /* GiphyTrends */;
+			targetProxy = E919885B1D4A67D900123A75 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E919883F1D4A67D900123A75 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E91988401D4A67D900123A75 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E91988471D4A67D900123A75 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E91988481D4A67D900123A75 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E91988611D4A67D900123A75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E91988621D4A67D900123A75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E91988641D4A67D900123A75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GiphyTrends/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.giphy.GiphyTrends;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E91988651D4A67D900123A75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GiphyTrends/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.giphy.GiphyTrends;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E91988671D4A67D900123A75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GiphyTrendsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.giphy.GiphyTrendsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GiphyTrends.app/GiphyTrends";
+			};
+			name = Debug;
+		};
+		E91988681D4A67D900123A75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GiphyTrendsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.giphy.GiphyTrendsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GiphyTrends.app/GiphyTrends";
+			};
+			name = Release;
+		};
+		E919886A1D4A67D900123A75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GiphyTrendsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.giphy.GiphyTrendsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GiphyTrends;
+			};
+			name = Debug;
+		};
+		E919886B1D4A67D900123A75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GiphyTrendsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.giphy.GiphyTrendsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GiphyTrends;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E91988331D4A67D900123A75 /* Build configuration list for PBXProject "GiphyTrends" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E91988611D4A67D900123A75 /* Debug */,
+				E91988621D4A67D900123A75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E91988631D4A67D900123A75 /* Build configuration list for PBXNativeTarget "GiphyTrends" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E91988641D4A67D900123A75 /* Debug */,
+				E91988651D4A67D900123A75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E91988661D4A67D900123A75 /* Build configuration list for PBXNativeTarget "GiphyTrendsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E91988671D4A67D900123A75 /* Debug */,
+				E91988681D4A67D900123A75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E91988691D4A67D900123A75 /* Build configuration list for PBXNativeTarget "GiphyTrendsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E919886A1D4A67D900123A75 /* Debug */,
+				E919886B1D4A67D900123A75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E91988421D4A67D900123A75 /* GiphyTrends.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E91988431D4A67D900123A75 /* GiphyTrends.xcdatamodel */,
+			);
+			currentVersion = E91988431D4A67D900123A75 /* GiphyTrends.xcdatamodel */;
+			path = GiphyTrends.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E91988301D4A67D900123A75 /* Project object */;
+}
