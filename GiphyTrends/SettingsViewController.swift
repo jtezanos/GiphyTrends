@@ -8,15 +8,36 @@
 
 import Foundation
 import UIKit
+import SwiftyUserDefaults
 
 class SettingsViewController: UIViewController {
+    
+    @IBOutlet weak var familyFriendlySwitch: UISwitch!
     
     @IBAction func closeSettingsPress(sender: AnyObject) {
         self.dismissViewControllerAnimated(true) { 
             
         }
     }
+    
+    @IBAction func familySearchToggle(familyFriendlySwitch: UISwitch) {
+        if familyFriendlySwitch.on {
+            Defaults[.familyFriendlyStatus] = true
+        } else {
+            Defaults[.familyFriendlyStatus] = false
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        checkFamilyFriendlyStatus()
+    }
+    
+    func checkFamilyFriendlyStatus() {
+        if Defaults[.familyFriendlyStatus] == true {
+            familyFriendlySwitch.setOn(true, animated: false)
+        } else {
+            familyFriendlySwitch.setOn(false, animated: false)
+        }
     }
 }

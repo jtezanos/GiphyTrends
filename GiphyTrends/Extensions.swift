@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import Gifu
+import SwiftyUserDefaults
 
 extension Dictionary {
     mutating func update(other:Dictionary) {
@@ -34,5 +35,10 @@ extension AnimatableImageView {
         task.resume()
         completion()
     }
+}
+
+//MARK: - Swifty User Defaults Keys
+extension DefaultsKeys {
+    static let familyFriendlyStatus = DefaultsKey<Bool>("familyFriendlyStatus")
 }
 

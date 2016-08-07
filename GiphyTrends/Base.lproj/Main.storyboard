@@ -163,10 +163,13 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hdx-6C-v3g">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hdx-6C-v3g">
                                 <rect key="frame" x="531" y="185" width="51" height="31"/>
                                 <color key="tintColor" red="0.97254901959999995" green="0.59607843140000005" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="onTintColor" red="0.97254901959999995" green="0.74883148317755754" blue="0.22129260881492477" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="familySearchToggle:" destination="9t6-ys-DNM" eventType="valueChanged" id="agX-49-NCb"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Family friendly search" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bky-OC-CFB">
                                 <rect key="frame" x="208" y="185" width="185" height="31"/>
@@ -197,6 +200,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="familyFriendlySwitch" destination="hdx-6C-v3g" id="kvi-bN-91y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JFa-wG-Q2n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
