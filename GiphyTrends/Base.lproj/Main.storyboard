@@ -1,13 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="IRd-5S-HwZ">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="hCp-39-3pk">
+            <objects>
+                <navigationController id="IRd-5S-HwZ" customClass="NavigationController" customModule="GiphyTrends" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wVV-Az-sz3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Fhg-22-yna"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="txl-6x-EBg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-427" y="349"/>
+        </scene>
+        <!--GiphyTrends-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="TrendingViewController" storyboardIdentifier="TrendingViewController" extendedLayoutIncludesOpaqueBars="YES" id="BYZ-38-t0r" customClass="TrendingViewController" customModule="GiphyTrends" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +33,255 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="TjZ-7Q-9jI">
+                                <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="YqC-VC-TLD"/>
+                                </connections>
+                            </searchBar>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iFE-ll-MHe">
+                                <rect key="frame" x="0.0" y="108" width="600" height="492"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="8" minimumInteritemSpacing="8" id="byW-vy-HHJ">
+                                    <size key="itemSize" width="181" height="170"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="GIFCollectionViewCell" reuseIdentifier="GIFCollectionViewCell" id="fV1-Td-uNN" customClass="GIFCollectionViewCell" customModule="GiphyTrends" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="181" height="170"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="181" height="170"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xu8-AF-xXl" customClass="AnimatableImageView" customModule="Gifu">
+                                                    <rect key="frame" x="0.0" y="0.0" width="181" height="170"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6eC-6e-TlS">
+                                                    <rect key="frame" x="147" y="8" width="26" height="26"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="26" id="OxZ-Id-egX"/>
+                                                        <constraint firstAttribute="width" constant="26" id="YwY-s0-QUl"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="6eC-6e-TlS" firstAttribute="trailing" secondItem="fV1-Td-uNN" secondAttribute="trailingMargin" id="5eh-Ko-7vP"/>
+                                            <constraint firstItem="Xu8-AF-xXl" firstAttribute="leading" secondItem="fV1-Td-uNN" secondAttribute="leading" id="Nnv-Dw-3XX"/>
+                                            <constraint firstAttribute="trailing" secondItem="Xu8-AF-xXl" secondAttribute="trailing" id="eID-Fi-0Ht"/>
+                                            <constraint firstItem="Xu8-AF-xXl" firstAttribute="top" secondItem="fV1-Td-uNN" secondAttribute="top" id="jwp-uA-chO"/>
+                                            <constraint firstItem="6eC-6e-TlS" firstAttribute="top" secondItem="fV1-Td-uNN" secondAttribute="topMargin" id="nke-mk-ZoA"/>
+                                            <constraint firstAttribute="bottom" secondItem="Xu8-AF-xXl" secondAttribute="bottom" id="yvW-SM-K0S"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="Xu8-AF-xXl" id="wK1-ze-n0O"/>
+                                            <outlet property="trendImageView" destination="6eC-6e-TlS" id="8KB-O1-hgS"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="OVR-6h-hmp"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ukg-tm-Vky"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TjZ-7Q-9jI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="8x7-GS-gsO"/>
+                            <constraint firstItem="iFE-ll-MHe" firstAttribute="leading" secondItem="TjZ-7Q-9jI" secondAttribute="leading" id="JW0-nx-8k9"/>
+                            <constraint firstItem="TjZ-7Q-9jI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Jr0-LQ-bVy"/>
+                            <constraint firstItem="iFE-ll-MHe" firstAttribute="trailing" secondItem="TjZ-7Q-9jI" secondAttribute="trailing" id="PhM-dM-oR0"/>
+                            <constraint firstItem="iFE-ll-MHe" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="eOw-n7-pY4"/>
+                            <constraint firstAttribute="trailing" secondItem="TjZ-7Q-9jI" secondAttribute="trailing" id="lNF-Ec-dkn"/>
+                            <constraint firstItem="iFE-ll-MHe" firstAttribute="top" secondItem="TjZ-7Q-9jI" secondAttribute="bottom" id="oUh-3s-ORc"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="GiphyTrends" id="tPd-qj-5i9">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="qjH-jF-Qxs">
+                            <connections>
+                                <action selector="settingsPress:" destination="BYZ-38-t0r" id="bXw-UX-DrA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="iFE-ll-MHe" id="o1T-e3-DFY"/>
+                        <outlet property="searchBar" destination="TjZ-7Q-9jI" id="D6B-aE-hXx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="305" y="349"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HCU-GO-sro">
+            <objects>
+                <navigationController restorationIdentifier="SettingsNavigationController" storyboardIdentifier="SettingsNavigationController" id="Qk6-me-Fkq" customClass="NavigationController" customModule="GiphyTrends" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pRp-O8-x7s">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9t6-ys-DNM" kind="relationship" relationship="rootViewController" id="XPe-S7-LuI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ana-QD-IfV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-427" y="1022"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="G0J-0X-yoq">
+            <objects>
+                <viewController restorationIdentifier="SettingsViewController" storyboardIdentifier="SettingsViewController" id="9t6-ys-DNM" customClass="SettingsViewController" customModule="GiphyTrends" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xuc-fZ-cVL"/>
+                        <viewControllerLayoutGuide type="bottom" id="tGd-MI-9qn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="22L-Um-FGO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="wEk-pY-cgj">
+                                <rect key="frame" x="540" y="121" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="qUc-8l-ifa"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GIF has been trendy!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ff8-iy-nvn">
+                                <rect key="frame" x="208" y="130" width="185" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="1zk-0b-5d7"/>
+                                    <constraint firstAttribute="width" constant="185" id="j6n-DB-7nf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hdx-6C-v3g">
+                                <rect key="frame" x="531" y="185" width="51" height="31"/>
+                                <color key="tintColor" red="0.97254901959999995" green="0.59607843140000005" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="onTintColor" red="0.97254901959999995" green="0.74883148317755754" blue="0.22129260881492477" alpha="1" colorSpace="calibratedRGB"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Family friendly search" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bky-OC-CFB">
+                                <rect key="frame" x="208" y="185" width="185" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.13287168560606055" green="0.13287168560606055" blue="0.13287168560606055" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Bky-OC-CFB" firstAttribute="top" secondItem="hdx-6C-v3g" secondAttribute="top" id="4Le-FN-run"/>
+                            <constraint firstItem="ff8-iy-nvn" firstAttribute="trailing" secondItem="Bky-OC-CFB" secondAttribute="trailing" id="4pm-Ka-vA5"/>
+                            <constraint firstItem="ff8-iy-nvn" firstAttribute="centerY" secondItem="wEk-pY-cgj" secondAttribute="centerY" id="5Pi-6G-NmI"/>
+                            <constraint firstItem="Bky-OC-CFB" firstAttribute="top" secondItem="ff8-iy-nvn" secondAttribute="bottom" constant="34" id="7Bj-Q4-FpF"/>
+                            <constraint firstItem="wEk-pY-cgj" firstAttribute="trailing" secondItem="22L-Um-FGO" secondAttribute="trailingMargin" id="Ez9-av-p2m"/>
+                            <constraint firstItem="Bky-OC-CFB" firstAttribute="bottom" secondItem="hdx-6C-v3g" secondAttribute="bottom" id="GaS-b4-Okj"/>
+                            <constraint firstItem="wEk-pY-cgj" firstAttribute="trailing" secondItem="hdx-6C-v3g" secondAttribute="trailing" id="HFy-SO-UOd"/>
+                            <constraint firstItem="hdx-6C-v3g" firstAttribute="top" secondItem="wEk-pY-cgj" secondAttribute="bottom" constant="24" id="R9K-a3-7mo"/>
+                            <constraint firstItem="ff8-iy-nvn" firstAttribute="leading" secondItem="Bky-OC-CFB" secondAttribute="leading" id="jcH-EI-evW"/>
+                            <constraint firstItem="ff8-iy-nvn" firstAttribute="centerX" secondItem="22L-Um-FGO" secondAttribute="centerX" id="jgA-xU-wYt"/>
+                            <constraint firstItem="wEk-pY-cgj" firstAttribute="top" secondItem="xuc-fZ-cVL" secondAttribute="bottom" constant="57" id="m7F-zx-pKc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings" id="g2R-Bu-AC2">
+                        <barButtonItem key="rightBarButtonItem" title="Close" id="TMF-q8-8Yb">
+                            <connections>
+                                <action selector="closeSettingsPress:" destination="9t6-ys-DNM" id="Q0k-r7-s0b"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JFa-wG-Q2n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="1022"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="1PH-p8-JhF">
+            <objects>
+                <viewController restorationIdentifier="SearchViewController" storyboardIdentifier="SearchViewController" id="oHC-cJ-sMN" customClass="SearchViewController" customModule="GiphyTrends" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gIP-Ch-qQk"/>
+                        <viewControllerLayoutGuide type="bottom" id="A9S-fP-Gy1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="N9Q-WG-36L">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2wM-GX-1tk">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="8" minimumInteritemSpacing="8" id="KKn-rV-xTj">
+                                    <size key="itemSize" width="181" height="170"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="GIFCollectionViewCell" reuseIdentifier="GIFCollectionViewCell" id="POc-7E-M0S" customClass="GIFCollectionViewCell" customModule="GiphyTrends" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="181" height="170"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="181" height="170"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VmI-5C-Z5l" customClass="AnimatableImageView" customModule="Gifu">
+                                                    <rect key="frame" x="0.0" y="0.0" width="181" height="170"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ser-Es-bbm">
+                                                    <rect key="frame" x="147" y="8" width="26" height="26"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="26" id="l6f-Mt-b0a"/>
+                                                        <constraint firstAttribute="height" constant="26" id="pAj-z8-VJC"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="VmI-5C-Z5l" secondAttribute="bottom" id="63m-6H-2Mg"/>
+                                            <constraint firstAttribute="trailing" secondItem="VmI-5C-Z5l" secondAttribute="trailing" id="Kem-Mo-SqC"/>
+                                            <constraint firstItem="VmI-5C-Z5l" firstAttribute="leading" secondItem="POc-7E-M0S" secondAttribute="leading" id="Y9I-Wb-DUg"/>
+                                            <constraint firstItem="ser-Es-bbm" firstAttribute="top" secondItem="POc-7E-M0S" secondAttribute="topMargin" id="a8W-sf-N0B"/>
+                                            <constraint firstItem="ser-Es-bbm" firstAttribute="trailing" secondItem="POc-7E-M0S" secondAttribute="trailingMargin" id="niy-vn-Gm6"/>
+                                            <constraint firstItem="VmI-5C-Z5l" firstAttribute="top" secondItem="POc-7E-M0S" secondAttribute="top" id="tOx-Nw-Fp8"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="VmI-5C-Z5l" id="4iV-23-Ll3"/>
+                                            <outlet property="trendImageView" destination="ser-Es-bbm" id="pRd-Lq-5vQ"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="oHC-cJ-sMN" id="LoF-xj-uzU"/>
+                                    <outlet property="delegate" destination="oHC-cJ-sMN" id="wXv-dW-x8i"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2wM-GX-1tk" firstAttribute="bottom" secondItem="A9S-fP-Gy1" secondAttribute="top" id="1Bk-CJ-Y47"/>
+                            <constraint firstAttribute="trailing" secondItem="2wM-GX-1tk" secondAttribute="trailing" id="f1W-aw-4L2"/>
+                            <constraint firstItem="2wM-GX-1tk" firstAttribute="top" secondItem="N9Q-WG-36L" secondAttribute="top" id="lFc-Bg-WQo"/>
+                            <constraint firstItem="2wM-GX-1tk" firstAttribute="leading" secondItem="N9Q-WG-36L" secondAttribute="leading" id="vFU-Wj-oPR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="2wM-GX-1tk" id="9UE-q9-sCk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wPG-Kg-kQm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="926" y="349"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="star" width="64" height="64"/>
+    </resources>
 </document>
