@@ -3,7 +3,7 @@
 View trending GIFs from Giphy - Search for GIFs too! Project was built with a bit of MVVM and some functional Swift.
 
 ## Installation
-- Intall [Cocoapods](http://guides.cocoapods.org/using/getting-started.html#installation).
+- Install [Cocoapods](http://guides.cocoapods.org/using/getting-started.html#installation).
 - cd to directory and create Podfile.
 ```swift
 pod install
