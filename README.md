@@ -1,7 +1,6 @@
+![alt tag](https://github.com/jtezanos/GiphyTrends/blob/master/GiphyTrends.gif)
 # GiphyTrends
 View trending GIFs from Giphy - Search for GIFs too! Project was built with a bit of MVVM and some functional Swift.
-
-<iframe src='https://gfycat.com/ifr/BossySpitefulBrahmancow' frameborder='0' scrolling='no' width='640' height='1142.8571428571427' allowfullscreen></iframe>
 
 ## Installation
 - Intall [Cocoapods](http://guides.cocoapods.org/using/getting-started.html#installation).
@@ -27,6 +26,7 @@ open Podfile
 ```swift
 pod install
 ```
+- Open GiphyTrends.xcworkspace
 
 ## Features
 - See Trending GIFs from Giphy
