@@ -21,7 +21,6 @@ extension Animatable where Self: UICollectionViewCell {
             self.frame.origin.x = viewController.view.frame.width
         }
         UIView.animateWithDuration(0.5, delay: 0.0, usingSpringWithDamping: 0.8, initialSpringVelocity: 3.0, options: UIViewAnimationOptions.CurveEaseInOut, animations: ({
-            // do stuff
             self.frame.origin.x = originX
         }), completion: nil)
     }

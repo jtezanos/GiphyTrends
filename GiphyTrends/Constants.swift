@@ -56,7 +56,7 @@ struct Parameters {
     
     //MARK: Parameters Dictionary that contains API Key
     static var withAPIKey: Dictionary<String,AnyObject> = ["api_key": Keys.apiKey]
-    static let limitValue = "25"
+    static let limitValue = "26"
     //User withLimitAndAPIKey Dictionary in order to limit # of GIFs returned from API
     static var withLimitAndAPIKey: Dictionary<String,AnyObject> = ["api_key": Keys.apiKey, "limit": Parameters.limitValue]
     
