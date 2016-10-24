@@ -6,3 +6,4 @@ pod 'Alamofire', '~> 3.0’
 pod 'Gifu'
 pod 'AASquaresLoading'
 pod 'SwiftyUserDefaults'
+
